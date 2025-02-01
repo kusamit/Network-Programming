@@ -19,5 +19,4 @@ public class SimpleEchoServer {
             System.out.println(e.getMessage());
         }
     }
-   
 }
