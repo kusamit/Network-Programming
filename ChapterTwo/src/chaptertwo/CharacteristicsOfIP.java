@@ -10,35 +10,35 @@ public class CharacteristicsOfIP {
         try{
             InetAddress address = InetAddress.getByName("localhost");
             if(address.isAnyLocalAddress()){
-                System.out.println(address+" is a wildcard address.");
+                System.out.println(address+" This is a wildcard IP address.");
             }
             if(address.isLoopbackAddress()){
-                System.out.println(address+" is a loopback address.");
+                System.out.println(address+"This is a loopback IP address.");
             }
             if(address.isLinkLocalAddress()){
-                System.out.println(address+" is a link-local address.");
+                System.out.println(address+"This is a link-local IP address.");
             }
             else if(address.isSiteLocalAddress()){
-                System.out.println(address+" is a site-local address.");
+                System.out.println(address+"This is a site-local IP address.");
             }else{
-                System.out.println(address+" is a global address.");
+                System.out.println(address+"This is a global IP address.");
             }
             if(address.isMulticastAddress()){
                 if(address.isMCGlobal()){
-                    System.out.println(address+" is a global multicast address.");
+                    System.out.println(address+" This is a global multicast IP address.");
                 }else if(address.isMCOrgLocal()){
-                    System.out.println(address+" is an organization wide multicast address.");
+                    System.out.println(address+"This is an organization wide multicast IP address.");
                 }else if(address.isMCSiteLocal()){
-                    System.out.println(address+" is a site wide multicast address.");
+                    System.out.println(address+"This is a site wide multicast IP address.");
                 }else if(address.isMCLinkLocal()){
-                    System.out.println(address+" is a subnet wide multicast address.");
+                    System.out.println(address+"This is a subnet wide multicast IP address.");
                 }else if(address.isMCNodeLocal()){
-                    System.out.println(address+" is an interface-local multicast address.");
+                    System.out.println(address+"This is an interface-local multicast IP address.");
                 }else{
-                    System.out.println(address+" is an unknown multicast address.");
+                    System.out.println(address+" This is an unknown multicast IP address.");
                 }
             }else{
-                System.out.println(address+" is a unicast address.");
+                System.out.println(address+"This is a unicast IP address.");
             }
         }catch(UnknownHostException ex){
             System.out.println("Error: " + ex.getMessage());
